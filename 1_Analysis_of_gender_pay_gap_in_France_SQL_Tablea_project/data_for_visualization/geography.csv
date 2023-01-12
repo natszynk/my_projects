@@ -1,0 +1,103 @@
+code_région,nom_région,numéro_département,nom_département
+82,Rhône-Alpes,01,Ain
+22,Picardie,02,Aisne
+83,Auvergne,03,Allier
+93,Provence-Alpes-Côte d'Azur,04,Alpes-de-Haute-Provence
+93,Provence-Alpes-Côte d'Azur,05,Hautes-Alpes
+93,Provence-Alpes-Côte d'Azur,06,Alpes-Maritimes
+82,Rhône-Alpes,07,Ardèche
+21,Champagne-Ardenne,08,Ardennes
+73,Midi-Pyrénées,09,Ariège
+21,Champagne-Ardenne,10,Aube
+91,Languedoc-Roussillon,11,Aude
+73,Midi-Pyrénées,12,Aveyron
+93,Provence-Alpes-Côte d'Azur,13,Bouches-du-Rhône
+25,Basse-Normandie,14,Calvados
+83,Auvergne,15,Cantal
+54,Poitou-Charentes,16,Charente
+54,Poitou-Charentes,17,Charente-Maritime
+24,Centre,18,Cher
+74,Limousin,19,Corrèze
+26,Bourgogne,21,Côte-d'Or
+53,Bretagne,22,Côtes-d'Armor
+74,Limousin,23,Creuse
+72,Aquitaine,24,Dordogne
+43,Franche-Comté,25,Doubs
+82,Rhône-Alpes,26,Drôme
+23,Haute-Normandie,27,Eure
+24,Centre,28,Eure-et-Loir
+53,Bretagne,29,Finistère
+94,Corse,2A,Corse-du-Sud
+94,Corse,2B,Haute-Corse
+91,Languedoc-Roussillon,30,Gard
+73,Midi-Pyrénées,31,Haute-Garonne
+73,Midi-Pyrénées,32,Gers
+72,Aquitaine,33,Gironde
+91,Languedoc-Roussillon,34,Hérault
+53,Bretagne,35,Ille-et-Vilaine
+24,Centre,36,Indre
+24,Centre,37,Indre-et-Loire
+82,Rhône-Alpes,38,Isère
+43,Franche-Comté,39,Jura
+72,Aquitaine,40,Landes
+24,Centre,41,Loir-et-Cher
+82,Rhône-Alpes,42,Loire
+83,Auvergne,43,Haute-Loire
+52,Pays de la Loire,44,Loire-Atlantique
+24,Centre,45,Loiret
+73,Midi-Pyrénées,46,Lot
+72,Aquitaine,47,Lot-et-Garonne
+91,Languedoc-Roussillon,48,Lozère
+52,Pays de la Loire,49,Maine-et-Loire
+25,Basse-Normandie,50,Manche
+21,Champagne-Ardenne,51,Marne
+21,Champagne-Ardenne,52,Haute-Marne
+52,Pays de la Loire,53,Mayenne
+41,Lorraine,54,Meurthe-et-Moselle
+41,Lorraine,55,Meuse
+53,Bretagne,56,Morbihan
+41,Lorraine,57,Moselle
+26,Bourgogne,58,Nièvre
+31,Nord-Pas-de-Calais,59,Nord
+22,Picardie,60,Oise
+25,Basse-Normandie,61,Orne
+31,Nord-Pas-de-Calais,62,Pas-de-Calais
+83,Auvergne,63,Puy-de-Dôme
+72,Aquitaine,64,Pyrénées-Atlantiques
+73,Midi-Pyrénées,65,Hautes-Pyrénées
+91,Languedoc-Roussillon,66,Pyrénées-Orientales
+42,Alsace,67,Bas-Rhin
+42,Alsace,68,Haut-Rhin
+82,Rhône-Alpes,69,Rhône
+43,Franche-Comté,70,Haute-Saône
+26,Bourgogne,71,Saône-et-Loire
+52,Pays de la Loire,72,Sarthe
+82,Rhône-Alpes,73,Savoie
+82,Rhône-Alpes,74,Haute-Savoie
+11,Île-de-France,75,Paris
+23,Haute-Normandie,76,Seine-Maritime
+11,Île-de-France,77,Seine-et-Marne
+11,Île-de-France,78,Yvelines
+54,Poitou-Charentes,79,Deux-Sèvres
+22,Picardie,80,Somme
+73,Midi-Pyrénées,81,Tarn
+73,Midi-Pyrénées,82,Tarn-et-Garonne
+93,Provence-Alpes-Côte d'Azur,83,Var
+93,Provence-Alpes-Côte d'Azur,84,Vaucluse
+52,Pays de la Loire,85,Vendée
+54,Poitou-Charentes,86,Vienne
+74,Limousin,87,Haute-Vienne
+41,Lorraine,88,Vosges
+26,Bourgogne,89,Yonne
+43,Franche-Comté,90,Territoire de Belfort
+11,Île-de-France,91,Essonne
+11,Île-de-France,92,Hauts-de-Seine
+11,Île-de-France,93,Seine-Saint-Denis
+11,Île-de-France,94,Val-de-Marne
+11,Île-de-France,95,Val-d'Oise
+1,Guadeloupe,971,Guadeloupe
+2,Martinique,972,Martinique
+3,Guyane,973,Guyane
+4,La Réunion,974,Réunion
+6,Saint-Pierre-et-Miquelon,975,Saint-Pierre-et-Miquelon
+5,Mayotte,976,Mayotte
