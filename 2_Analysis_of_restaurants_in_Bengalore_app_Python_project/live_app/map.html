@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d431eeb57ea4140fe99641a397bdbad1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d431eeb57ea4140fe99641a397bdbad1" ></div>
+        
+</body>
+<script>    
+    
+            var map_d431eeb57ea4140fe99641a397bdbad1 = L.map(
+                "map_d431eeb57ea4140fe99641a397bdbad1",
+                {
+                    center: [12.978889, 77.591667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9c31a7d7a2735c4e2838ad18e41e55e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var marker_69990bafd03b7016444db2111c6854ed = L.marker(
+                [12.861673047762629, 77.49231944796773],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_776f1e2dd18bc190b138ab5b9dee0bd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-user", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69990bafd03b7016444db2111c6854ed.setIcon(icon_776f1e2dd18bc190b138ab5b9dee0bd2);
+        
+    
+        var popup_f7cd37c0985118a07d82a9371e54148a = L.popup({"maxWidth": 300});
+
+        
+            var html_7cb98e8a0f6476013b4a16bcfd96c4ff = $(`<div id="html_7cb98e8a0f6476013b4a16bcfd96c4ff" style="width: 100.0%; height: 100.0%;"><b>You are here!</b></div>`)[0];
+            popup_f7cd37c0985118a07d82a9371e54148a.setContent(html_7cb98e8a0f6476013b4a16bcfd96c4ff);
+        
+
+        marker_69990bafd03b7016444db2111c6854ed.bindPopup(popup_f7cd37c0985118a07d82a9371e54148a)
+        ;
+
+        
+    
+    
+            var marker_fdfa4d33ce15b84fafc375b57c204b98 = L.marker(
+                [12.9358419, 77.6180078],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_35d4c865fec4edb576849f9678e0c0e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fdfa4d33ce15b84fafc375b57c204b98.setIcon(icon_35d4c865fec4edb576849f9678e0c0e8);
+        
+    
+        var popup_e6e412ef1f1ce40553e8be665dd260f4 = L.popup({"maxWidth": 400});
+
+        
+            var html_2f685b927015efa75997fd84cacfb3d2 = $(`<div id="html_2f685b927015efa75997fd84cacfb3d2" style="width: 100.0%; height: 100.0%;">         <h4>Truffles</h4>         <b>Address:</b> 28, 4th 'B' Cross, Koramangala 5th Block, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/truffles-koramangala-5th-block?context=eyJzZSI6eyJlIjpbIjE4NjQwMDkxIiwiMTg5NjE3OTMiLCI1NjYyNyIsIjE4NTM1NjAyIiw1MTA0MCwiNTY1NDIiLCI1NTkxOSIsIjE4ODc4OTQ0IiwiNTkxNjgiLCIxODM2MjQyMiIsIjU3NTAzIiwiMTgwMjIyNjkiLCIxODYzMjcxNyIsIjE4NjEyODQ4IiwiMTg2ODI2MjMiXSwidCI6IkNhZlx1MDBlOXMgYW5kIERlbGlzIGluIEJUTSJ9fQ==>https://www.zomato.com/bangalore/truffles-koramangala-5th-block?context=eyJzZSI6eyJlIjpbIjE4NjQwMDkxIiwiMTg5NjE3OTMiLCI1NjYyNyIsIjE4NTM1NjAyIiw1MTA0MCwiNTY1NDIiLCI1NTkxOSIsIjE4ODc4OTQ0IiwiNTkxNjgiLCIxODM2MjQyMiIsIjU3NTAzIiwiMTgwMjIyNjkiLCIxODYzMjcxNyIsIjE4NjEyODQ4IiwiMTg2ODI2MjMiXSwidCI6IkNhZlx1MDBlOXMgYW5kIERlbGlzIGluIEJUTSJ9fQ==</a></div>         <b>Phone number(s):</b> 080 49652818<br>         <b>Rating:</b> 4.7/5 (14654 votes) <br>         <b>Cuisine type:</b> Cafe, American, Burger, Steak<br>         <b>Price:</b> $$$$</div>`)[0];
+            popup_e6e412ef1f1ce40553e8be665dd260f4.setContent(html_2f685b927015efa75997fd84cacfb3d2);
+        
+
+        marker_fdfa4d33ce15b84fafc375b57c204b98.bindPopup(popup_e6e412ef1f1ce40553e8be665dd260f4)
+        ;
+
+        
+    
+    
+            marker_fdfa4d33ce15b84fafc375b57c204b98.bindTooltip(
+                `<div>
+                     
+                <b>TOP 1: </b><i>Truffles</i>. 
+                You will get there on foot in 199 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c09aed1f7953db4142ea13962d4dfbc = L.marker(
+                [12.9299528, 77.63383619999999],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_c58ddaa15254c9fa6a0b2120b52e9418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c09aed1f7953db4142ea13962d4dfbc.setIcon(icon_c58ddaa15254c9fa6a0b2120b52e9418);
+        
+    
+        var popup_8afc95574708f1aef5f3def57eabd11c = L.popup({"maxWidth": 400});
+
+        
+            var html_bfc81bf5b4da854a585451ccc3ef36ae = $(`<div id="html_bfc81bf5b4da854a585451ccc3ef36ae" style="width: 100.0%; height: 100.0%;">         <h4>The Hole in the Wall Cafe</h4>         <b>Address:</b> 4, 8th Main Road, Koramangala 4th Block, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/the-hole-in-the-wall-cafe-koramangala-4th-block?context=eyJzZSI6eyJlIjpbIjU2MDIzIiwiMTg1ODI0OTEiLDU0MDQ0LCI1OTg0MCIsIjE4MzgwODMxIiwiMTgzMTM1NDciLCIxODUwMzczMyIsIjE4NTkxNjQwIiwiMTg3NjcwNDUiLCIxODgwODM0MyIsIjE4NTY1ODQ5IiwiNTU2MjYiLCI1MDMxNyJdLCJ0IjoiQ2FmXHUwMGU5cyBhbmQgRGVsaXMgaW4gS29yYW1hbmdhbGEgNHRoIEJsb2NrIn19>https://www.zomato.com/bangalore/the-hole-in-the-wall-cafe-koramangala-4th-block?context=eyJzZSI6eyJlIjpbIjU2MDIzIiwiMTg1ODI0OTEiLDU0MDQ0LCI1OTg0MCIsIjE4MzgwODMxIiwiMTgzMTM1NDciLCIxODUwMzczMyIsIjE4NTkxNjQwIiwiMTg3NjcwNDUiLCIxODgwODM0MyIsIjE4NTY1ODQ5IiwiNTU2MjYiLCI1MDMxNyJdLCJ0IjoiQ2FmXHUwMGU5cyBhbmQgRGVsaXMgaW4gS29yYW1hbmdhbGEgNHRoIEJsb2NrIn19</a></div>         <b>Phone number(s):</b> 080 40949490, +91 9945602562<br>         <b>Rating:</b> 4.6/5 (7113 votes) <br>         <b>Cuisine type:</b> Cafe, American, Burger<br>         <b>Price:</b> $$$$</div>`)[0];
+            popup_8afc95574708f1aef5f3def57eabd11c.setContent(html_bfc81bf5b4da854a585451ccc3ef36ae);
+        
+
+        marker_3c09aed1f7953db4142ea13962d4dfbc.bindPopup(popup_8afc95574708f1aef5f3def57eabd11c)
+        ;
+
+        
+    
+    
+            marker_3c09aed1f7953db4142ea13962d4dfbc.bindTooltip(
+                `<div>
+                     
+                <b>TOP 2: </b><i>The Hole in the Wall Cafe</i>. 
+                You will get there on foot in 214 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86719c1c5fe27b44a7019bc1f4dbbe61 = L.marker(
+                [12.9420891, 77.57091009999999],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_99bd32b11ef47f9b37dea354e0fdf9c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_86719c1c5fe27b44a7019bc1f4dbbe61.setIcon(icon_99bd32b11ef47f9b37dea354e0fdf9c2);
+        
+    
+        var popup_cb0944cc5a5897fb2b86ba075a60280f = L.popup({"maxWidth": 400});
+
+        
+            var html_1a7b3a7b93e89f117fd2e6cffb52ab6c = $(`<div id="html_1a7b3a7b93e89f117fd2e6cffb52ab6c" style="width: 100.0%; height: 100.0%;">         <h4>Onesta</h4>         <b>Address:</b> 90/66, 1st Floor, Gandhi Bazar Main Road, Basavanagudi, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/onesta-basavanagudi?context=eyJzZSI6eyJlIjpbIjE4ODA5MDk5IiwiMTg3OTkzNDIiLDE4NTk3NDE0LCIxODQzOTY3MCIsIjU1MDkwIiwiNTc0MzUiLCIxODUxNDA2NSIsIjUxNzg4IiwiMTg1MjQ4NjMiLCI1MDIxOCIsIjE4NDY3NzYxIiwiMTg2MDI5NDYiLCI2MDIyOSJdLCJ0IjoiQ2FmXHUwMGU5cyBhbmQgRGVsaXMgaW4gQmFzYXZhbmFndWRpIn19>https://www.zomato.com/bangalore/onesta-basavanagudi?context=eyJzZSI6eyJlIjpbIjE4ODA5MDk5IiwiMTg3OTkzNDIiLDE4NTk3NDE0LCIxODQzOTY3MCIsIjU1MDkwIiwiNTc0MzUiLCIxODUxNDA2NSIsIjUxNzg4IiwiMTg1MjQ4NjMiLCI1MDIxOCIsIjE4NDY3NzYxIiwiMTg2MDI5NDYiLCI2MDIyOSJdLCJ0IjoiQ2FmXHUwMGU5cyBhbmQgRGVsaXMgaW4gQmFzYXZhbmFndWRpIn19</a></div>         <b>Phone number(s):</b> +91 8049525686<br>         <b>Rating:</b> 4.6/5 (1755 votes) <br>         <b>Cuisine type:</b> Pizza, Cafe, Italian<br>         <b>Price:</b> $$$$</div>`)[0];
+            popup_cb0944cc5a5897fb2b86ba075a60280f.setContent(html_1a7b3a7b93e89f117fd2e6cffb52ab6c);
+        
+
+        marker_86719c1c5fe27b44a7019bc1f4dbbe61.bindPopup(popup_cb0944cc5a5897fb2b86ba075a60280f)
+        ;
+
+        
+    
+    
+            marker_86719c1c5fe27b44a7019bc1f4dbbe61.bindTooltip(
+                `<div>
+                     
+                <b>TOP 3: </b><i>Onesta</i>. 
+                You will get there on foot in 154 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de44e9e403eb540e88dd656736835b6c = L.marker(
+                [12.9041457, 77.55952090000001],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_964c45a183ef76de06bc943afe907256 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_de44e9e403eb540e88dd656736835b6c.setIcon(icon_964c45a183ef76de06bc943afe907256);
+        
+    
+        var popup_d25a519441264e04c4fb589820c6596c = L.popup({"maxWidth": 400});
+
+        
+            var html_5bbf54bf3d8b7ce901562ec8cdf63f04 = $(`<div id="html_5bbf54bf3d8b7ce901562ec8cdf63f04" style="width: 100.0%; height: 100.0%;">         <h4>Royal King Cafe</h4>         <b>Address:</b> 1617, 1st Floor, 50 Feet Road, 1st Stage, Kumaraswamy Layout, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/royal-king-cafe-kumaraswamy-layout-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjAyODY1IiwiMTgzODY3NzEiLCIxODUyMTYzMSIsIjE4NjA2OTExIiwxODkyNDkwNSwiMTg0NDcwODgiLCIxODgyNDM0MiIsIjE4NTUzMjkyIiwiNTQ0NTYiLCIxODM3Nzk0MSIsIjE4MzU1MjgyIiwiMTg3NTE5NjgiLCIxODM0NjMyMyIsIjE4NTAwMDIwIiwiMTgyODA1OTQiLCIxODM0Mjg3NyJdLCJ0IjoiQ2FmXHUwMGU5cyBhbmQgRGVsaXMgaW4gSlAgTmFnYXIifX0=>https://www.zomato.com/bangalore/royal-king-cafe-kumaraswamy-layout-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjAyODY1IiwiMTgzODY3NzEiLCIxODUyMTYzMSIsIjE4NjA2OTExIiwxODkyNDkwNSwiMTg0NDcwODgiLCIxODgyNDM0MiIsIjE4NTUzMjkyIiwiNTQ0NTYiLCIxODM3Nzk0MSIsIjE4MzU1MjgyIiwiMTg3NTE5NjgiLCIxODM0NjMyMyIsIjE4NTAwMDIwIiwiMTgyODA1OTQiLCIxODM0Mjg3NyJdLCJ0IjoiQ2FmXHUwMGU5cyBhbmQgRGVsaXMgaW4gSlAgTmFnYXIifX0=</a></div>         <b>Phone number(s):</b> +91 9513333220<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> Cafe, Fast Food<br>         <b>Price:</b> $$$</div>`)[0];
+            popup_d25a519441264e04c4fb589820c6596c.setContent(html_5bbf54bf3d8b7ce901562ec8cdf63f04);
+        
+
+        marker_de44e9e403eb540e88dd656736835b6c.bindPopup(popup_d25a519441264e04c4fb589820c6596c)
+        ;
+
+        
+    
+    
+            marker_de44e9e403eb540e88dd656736835b6c.bindTooltip(
+                `<div>
+                     
+                <b>TOP 4: </b><i>Royal King Cafe</i>. 
+                You will get there on foot in 108 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9f65826a59aa928a122618d19f81ab8 = L.marker(
+                [12.9036765, 77.5759693],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_02847fc2c7874c60ca4d137b977aeb0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b9f65826a59aa928a122618d19f81ab8.setIcon(icon_02847fc2c7874c60ca4d137b977aeb0e);
+        
+    
+        var popup_5ac182f6cb95c72976284e80db953df8 = L.popup({"maxWidth": 400});
+
+        
+            var html_af9a4f153da46a5ec2fcf2b5651eb399 = $(`<div id="html_af9a4f153da46a5ec2fcf2b5651eb399" style="width: 100.0%; height: 100.0%;">         <h4>Ice Burg</h4>         <b>Address:</b> 945 24th Main 1st A Cross 2nd phase, JP Nagar, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/ice-burg-1-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjI4NzgwIiwiMTg1Nzc5NTgiLCIxODM0Mjg3NyIsIjE4MjYzNDE5IiwxODk3MDAzNF0sInQiOiJDYWZcdTAwZTlzIGFuZCBEZWxpcyBpbiBKYXlhbmFnYXIifX0=>https://www.zomato.com/bangalore/ice-burg-1-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjI4NzgwIiwiMTg1Nzc5NTgiLCIxODM0Mjg3NyIsIjE4MjYzNDE5IiwxODk3MDAzNF0sInQiOiJDYWZcdTAwZTlzIGFuZCBEZWxpcyBpbiBKYXlhbmFnYXIifX0=</a></div>         <b>Phone number(s):</b> +91 9483867282<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> Cafe, Continental, Desserts<br>         <b>Price:</b> $$</div>`)[0];
+            popup_5ac182f6cb95c72976284e80db953df8.setContent(html_af9a4f153da46a5ec2fcf2b5651eb399);
+        
+
+        marker_b9f65826a59aa928a122618d19f81ab8.bindPopup(popup_5ac182f6cb95c72976284e80db953df8)
+        ;
+
+        
+    
+    
+            marker_b9f65826a59aa928a122618d19f81ab8.bindTooltip(
+                `<div>
+                     
+                <b>TOP 5: </b><i>Ice Burg</i>. 
+                You will get there on foot in 128 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3935bc98ed3739026d52704c4a85b2a0 = L.marker(
+                [12.9087325, 77.5741183],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_eca56550717f831752368d62bad0c6b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3935bc98ed3739026d52704c4a85b2a0.setIcon(icon_eca56550717f831752368d62bad0c6b1);
+        
+    
+        var popup_f921b8ae734ee2c83ea9a3992f1407f7 = L.popup({"maxWidth": 400});
+
+        
+            var html_da6d1f3c8f9314c73a4f0ee14440e5fb = $(`<div id="html_da6d1f3c8f9314c73a4f0ee14440e5fb" style="width: 100.0%; height: 100.0%;">         <h4>Potu's kitchen</h4>         <b>Address:</b> 6 & 7 1st Cross, 2nd Main Road, Navodaya Nagar, 7th Phase, JP Nagar, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/potus-kitchen-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4ODk5MzA0IiwiNTUwMTYiLCIxODcyMjg5MyIsIjE4NTYzOTMxIiwxODk0NjIzMywiMTg5NDQ5NzkiLCIxODQyMzU1OSIsIjE4NjM0ODEyIiwiMTg2MTgzMzMiLCIxODg2OTc5MiIsIjE4Nzc5NzU0IiwiMTg3MzYwNTQiLCIxODkyMjkwMyIsIjE4NTM3OTM2IiwiNTczMTAiXSwidCI6IkRpbmUtT3V0IFJlc3RhdXJhbnRzIGluIEpQIE5hZ2FyIn19>https://www.zomato.com/bangalore/potus-kitchen-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4ODk5MzA0IiwiNTUwMTYiLCIxODcyMjg5MyIsIjE4NTYzOTMxIiwxODk0NjIzMywiMTg5NDQ5NzkiLCIxODQyMzU1OSIsIjE4NjM0ODEyIiwiMTg2MTgzMzMiLCIxODg2OTc5MiIsIjE4Nzc5NzU0IiwiMTg3MzYwNTQiLCIxODkyMjkwMyIsIjE4NTM3OTM2IiwiNTczMTAiXSwidCI6IkRpbmUtT3V0IFJlc3RhdXJhbnRzIGluIEpQIE5hZ2FyIn19</a></div>         <b>Phone number(s):</b> +91 8197548913<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> Chinese, North Indian, Street Food, Rolls<br>         <b>Price:</b> $$</div>`)[0];
+            popup_f921b8ae734ee2c83ea9a3992f1407f7.setContent(html_da6d1f3c8f9314c73a4f0ee14440e5fb);
+        
+
+        marker_3935bc98ed3739026d52704c4a85b2a0.bindPopup(popup_f921b8ae734ee2c83ea9a3992f1407f7)
+        ;
+
+        
+    
+    
+            marker_3935bc98ed3739026d52704c4a85b2a0.bindTooltip(
+                `<div>
+                     
+                <b>TOP 6: </b><i>Potu's kitchen</i>. 
+                You will get there on foot in 129 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_243913bf6eba09e04d7dac2334e715d4 = L.marker(
+                [12.9114915, 77.5743593],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_3ff14874330eecf61fcb4f2b76efd580 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_243913bf6eba09e04d7dac2334e715d4.setIcon(icon_3ff14874330eecf61fcb4f2b76efd580);
+        
+    
+        var popup_d5deb1ece7c90a0a2e01c11a74079c8a = L.popup({"maxWidth": 400});
+
+        
+            var html_a9a5f4548b1a3520dad2e243cc4c5ef4 = $(`<div id="html_a9a5f4548b1a3520dad2e243cc4c5ef4" style="width: 100.0%; height: 100.0%;">         <h4>Junkealth</h4>         <b>Address:</b> JP Nagar, Phase 7, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/junkealth-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjkxNjMxIiwiNTAzMjEiLCIxODY3MDc5MyIsIjE4NzkxNTYxIiwxODc4NTc3NSwiNTk2NDUiLCIxODYyODc4MCIsIjE4MzQ2MzIzIl0sInQiOiJDYWZcdTAwZTlzIGFuZCBEZWxpcyBpbiBCYW5uZXJnaGF0dGEgUm9hZCJ9fQ==>https://www.zomato.com/bangalore/junkealth-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjkxNjMxIiwiNTAzMjEiLCIxODY3MDc5MyIsIjE4NzkxNTYxIiwxODc4NTc3NSwiNTk2NDUiLCIxODYyODc4MCIsIjE4MzQ2MzIzIl0sInQiOiJDYWZcdTAwZTlzIGFuZCBEZWxpcyBpbiBCYW5uZXJnaGF0dGEgUm9hZCJ9fQ==</a></div>         <b>Phone number(s):</b> +91 9880530105<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> Healthy Food, Beverages, Cafe<br>         <b>Price:</b> $$</div>`)[0];
+            popup_d5deb1ece7c90a0a2e01c11a74079c8a.setContent(html_a9a5f4548b1a3520dad2e243cc4c5ef4);
+        
+
+        marker_243913bf6eba09e04d7dac2334e715d4.bindPopup(popup_d5deb1ece7c90a0a2e01c11a74079c8a)
+        ;
+
+        
+    
+    
+            marker_243913bf6eba09e04d7dac2334e715d4.bindTooltip(
+                `<div>
+                     
+                <b>TOP 7: </b><i>Junkealth</i>. 
+                You will get there on foot in 131 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19680d6751b2b1c174c5e31fbd847fba = L.marker(
+                [12.9041965, 77.5791583],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_fa7a9800e0a9e5db95ac26f2d786c7ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_19680d6751b2b1c174c5e31fbd847fba.setIcon(icon_fa7a9800e0a9e5db95ac26f2d786c7ea);
+        
+    
+        var popup_21daca8df34753be9fd9d83f38921f46 = L.popup({"maxWidth": 400});
+
+        
+            var html_10246555847ca18dc7d012e04f29bab4 = $(`<div id="html_10246555847ca18dc7d012e04f29bab4" style="width: 100.0%; height: 100.0%;">         <h4>Narayany Pure Veg</h4>         <b>Address:</b> 6th Phase, JP Nagar, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/narayany-pure-veg-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjQ2NzczIiwiMTg1NTQ1MjYiLCI1MzM0MiIsIjE4NDg3MTgxIiwxODc0OTYwOSwiMTg3OTUwNzYiLCIxODM3MTI1OSIsIjE4NzE5ODI3IiwiMTg1NjkxNTciLCIxODY2MjI2MyIsIjE4NjYwNzA4IiwiMTg3NDQxNzAiLCIxODcxMzQzNyIsIjUyOTI5IiwiNTY1NjciLCIxODYxNzgyNCIsIjE4ODc3NzI0IiwiMTg3NDk2ODciXSwidCI6IkRlbGl2ZXJ5IFJlc3RhdXJhbnRzIGluIEJhbm5lcmdoYXR0YSBSb2FkIn19>https://www.zomato.com/bangalore/narayany-pure-veg-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4NjQ2NzczIiwiMTg1NTQ1MjYiLCI1MzM0MiIsIjE4NDg3MTgxIiwxODc0OTYwOSwiMTg3OTUwNzYiLCIxODM3MTI1OSIsIjE4NzE5ODI3IiwiMTg1NjkxNTciLCIxODY2MjI2MyIsIjE4NjYwNzA4IiwiMTg3NDQxNzAiLCIxODcxMzQzNyIsIjUyOTI5IiwiNTY1NjciLCIxODYxNzgyNCIsIjE4ODc3NzI0IiwiMTg3NDk2ODciXSwidCI6IkRlbGl2ZXJ5IFJlc3RhdXJhbnRzIGluIEJhbm5lcmdoYXR0YSBSb2FkIn19</a></div>         <b>Phone number(s):</b> +91 8310783258<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> Street Food, North Indian<br>         <b>Price:</b> $$</div>`)[0];
+            popup_21daca8df34753be9fd9d83f38921f46.setContent(html_10246555847ca18dc7d012e04f29bab4);
+        
+
+        marker_19680d6751b2b1c174c5e31fbd847fba.bindPopup(popup_21daca8df34753be9fd9d83f38921f46)
+        ;
+
+        
+    
+    
+            marker_19680d6751b2b1c174c5e31fbd847fba.bindTooltip(
+                `<div>
+                     
+                <b>TOP 8: </b><i>Narayany Pure Veg</i>. 
+                You will get there on foot in 132 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3005d8ab90714a26f10cc4b0a53e9ca4 = L.marker(
+                [12.9057655, 77.5814913],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_821c4d97c6acccd37782c84eb323f4d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3005d8ab90714a26f10cc4b0a53e9ca4.setIcon(icon_821c4d97c6acccd37782c84eb323f4d1);
+        
+    
+        var popup_4375f71dc7c27c0b35d02652b62b6752 = L.popup({"maxWidth": 400});
+
+        
+            var html_1fe9827ef303ede270a306b3a781454c = $(`<div id="html_1fe9827ef303ede270a306b3a781454c" style="width: 100.0%; height: 100.0%;">         <h4>SAATHVIK Cafe Chats</h4>         <b>Address:</b> 2035, 26th Main Road, South End F Cross, Oppsite Ragigudda Temple, 9th block, J.p.Nagar, Bangalore, Bengaluru<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/saathvik-cafe-chats-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE3OTU2NzAyIiwiMTg0MzA3NDAiLCIxODYzMjE2NiIsIjE4NjY1NTg4IiwxODcxMTY3OCwiMTg3MDI3NTQiLCIxODc1NzY2OCIsIjE4ODEwMDI4IiwiMTg1NjMwNTciLCI1Mzg5OSIsIjE4NjgxNTgwIiwiMTg3NzQ3MjUiLCI1NjM5NyIsIjE4MjE2NjczIiwiNjEwOTQiXSwidCI6IkRlbGl2ZXJ5IFJlc3RhdXJhbnRzIGluIEJUTSJ9fQ==>https://www.zomato.com/bangalore/saathvik-cafe-chats-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE3OTU2NzAyIiwiMTg0MzA3NDAiLCIxODYzMjE2NiIsIjE4NjY1NTg4IiwxODcxMTY3OCwiMTg3MDI3NTQiLCIxODc1NzY2OCIsIjE4ODEwMDI4IiwiMTg1NjMwNTciLCI1Mzg5OSIsIjE4NjgxNTgwIiwiMTg3NzQ3MjUiLCI1NjM5NyIsIjE4MjE2NjczIiwiNjEwOTQiXSwidCI6IkRlbGl2ZXJ5IFJlc3RhdXJhbnRzIGluIEJUTSJ9fQ==</a></div>         <b>Phone number(s):</b> +91 9620649493<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> North Indian, Street Food<br>         <b>Price:</b> $$</div>`)[0];
+            popup_4375f71dc7c27c0b35d02652b62b6752.setContent(html_1fe9827ef303ede270a306b3a781454c);
+        
+
+        marker_3005d8ab90714a26f10cc4b0a53e9ca4.bindPopup(popup_4375f71dc7c27c0b35d02652b62b6752)
+        ;
+
+        
+    
+    
+            marker_3005d8ab90714a26f10cc4b0a53e9ca4.bindTooltip(
+                `<div>
+                     
+                <b>TOP 9: </b><i>SAATHVIK Cafe Chats</i>. 
+                You will get there on foot in 136 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ac0c65310600858a1113eb718331ae3 = L.marker(
+                [12.9085895, 77.5747253],
+                {}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+    
+            var icon_a56d65ceb6bd9fd8c904f915a2fc0961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ac0c65310600858a1113eb718331ae3.setIcon(icon_a56d65ceb6bd9fd8c904f915a2fc0961);
+        
+    
+        var popup_fcdc0db6bff53e545a7bc6855f8c5236 = L.popup({"maxWidth": 400});
+
+        
+            var html_f15a2334f19591b462c110616ccfb2b8 = $(`<div id="html_f15a2334f19591b462c110616ccfb2b8" style="width: 100.0%; height: 100.0%;">         <h4>Furry Fairy Paw Paradise</h4>         <b>Address:</b> 81, 7th Main, 5th Cross, Bank of Baroda Colony, 7th Phase, JP Nagar, Bangalore<br>         <div style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">         <b>Website:</b> <a href=https://www.zomato.com/bangalore/furry-fairy-paw-paradise-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4ODU2MDA1IiwiMTg2OTE2MzEiLCI1MDMyMSIsIjE4NjcwNzkzIiwxODc5MTU2MSwiMTg3ODU3NzUiLCI1OTY0NSIsIjE4NjI4NzgwIiwiMTgzNDYzMjMiXSwidCI6IkNhZlx1MDBlOXMgYW5kIERlbGlzIGluIEJhbm5lcmdoYXR0YSBSb2FkIn19>https://www.zomato.com/bangalore/furry-fairy-paw-paradise-jp-nagar-bangalore?context=eyJzZSI6eyJlIjpbIjE4ODU2MDA1IiwiMTg2OTE2MzEiLCI1MDMyMSIsIjE4NjcwNzkzIiwxODc5MTU2MSwiMTg3ODU3NzUiLCI1OTY0NSIsIjE4NjI4NzgwIiwiMTgzNDYzMjMiXSwidCI6IkNhZlx1MDBlOXMgYW5kIERlbGlzIGluIEJhbm5lcmdoYXR0YSBSb2FkIn19</a></div>         <b>Phone number(s):</b> +91 9901222032, +91 9986450438<br>         <b>Rating:</b> -/5 (0 votes) - new restaurant <br>         <b>Cuisine type:</b> Cafe<br>         <b>Price:</b> $$$</div>`)[0];
+            popup_fcdc0db6bff53e545a7bc6855f8c5236.setContent(html_f15a2334f19591b462c110616ccfb2b8);
+        
+
+        marker_8ac0c65310600858a1113eb718331ae3.bindPopup(popup_fcdc0db6bff53e545a7bc6855f8c5236)
+        ;
+
+        
+    
+    
+            marker_8ac0c65310600858a1113eb718331ae3.bindTooltip(
+                `<div>
+                     
+                <b>TOP 10: </b><i>Furry Fairy Paw Paradise</i>. 
+                You will get there on foot in 129 minutes.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fe982331880043cffcb50a95573ec4df = L.polyline(
+                [[12.861673047762629, 77.49231944796773], [12.9358419, 77.6180078]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "10", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3.5}
+            ).addTo(map_d431eeb57ea4140fe99641a397bdbad1);
+        
+</script>
