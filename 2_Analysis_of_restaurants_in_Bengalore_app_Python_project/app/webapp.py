@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+import folium
 from functions.application_runner import run_application
 df = pd.read_csv("cleaned_zomato.csv")
 df["cuisines"] = df["cuisines"].apply(eval)
