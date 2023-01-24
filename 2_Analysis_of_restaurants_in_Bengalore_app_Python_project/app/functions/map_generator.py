@@ -1,8 +1,8 @@
 import folium
-import webbrowser
+# import webbrowser
 import pandas as pd
 import numpy as np
-from IPython.display import display
+# from IPython.display import display
 
 BANGALORE_CENTRE_POSITION = [12.978889, 77.591667]
 FILE_LOCATION = "map.html"
