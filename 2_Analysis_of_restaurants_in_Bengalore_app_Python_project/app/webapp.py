@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-from functions.input_collectors import display_widgets, cuisines_list
 from functions.application_runner import run_application
 df = pd.read_csv("cleaned_zomato.csv")
 df["cuisines"] = df["cuisines"].apply(eval)
