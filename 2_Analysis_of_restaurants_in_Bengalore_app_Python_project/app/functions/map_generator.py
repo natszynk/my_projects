@@ -2,10 +2,11 @@ import folium
 import webbrowser
 import pandas as pd
 import numpy as np
+from streamlit_folium import st_folium, folium_static 
 from IPython.display import display
 
 BANGALORE_CENTRE_POSITION = [12.978889, 77.591667]
-FILE_LOCATION = "map.html"
+# FILE_LOCATION = "map.html"
 
 def generate_popup(df,x):
 
@@ -66,7 +67,8 @@ def generate_map(df:pd.DataFrame,user_location:tuple):
         generated_map
     )
 
-    generated_map.save(FILE_LOCATION)
+    # generated_map.save(FILE_LOCATION)
+    generated_map = folium_static(generated_map)
     # return webbrowser.open('map.html')
     return generated_map
     # display(generated_map)
