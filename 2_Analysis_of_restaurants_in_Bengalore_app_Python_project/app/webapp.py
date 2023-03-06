@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 from streamlit_folium import st_folium, folium_static 
-from functions.input_collectors import cuisines_list
+from functions.data_filters import cuisines_list
 from functions.application_runner import run_application
 df = pd.read_csv("cleaned_zomato.csv")
 df["cuisines"] = df["cuisines"].apply(eval)
