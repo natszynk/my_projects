@@ -1,10 +1,14 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+import os
 from streamlit_folium import st_folium, folium_static 
 from functions.data_filters import cuisines_list
 from functions.application_runner import run_application
-df = pd.read_csv("cleaned_zomato.csv")
+
+cwd = os.getcwd()
+
+df = pd.read_csv(str(cwd+"/cleaned_zomato.csv"))
 df["cuisines"] = df["cuisines"].apply(eval)
 
 # Title
