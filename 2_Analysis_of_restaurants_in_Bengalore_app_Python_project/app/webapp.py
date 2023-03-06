@@ -8,7 +8,7 @@ from functions.application_runner import run_application
 
 cwd = os.getcwd()
 
-df = pd.read_csv(str(cwd+"/cleaned_zomato.csv"))
+df = pd.read_csv(str(cwd+"/2_Analysis_of_restaurants_in_Bengalore_app_Python_project/app/cleaned_zomato.csv"))
 df["cuisines"] = df["cuisines"].apply(eval)
 
 # Title
