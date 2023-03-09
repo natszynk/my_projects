@@ -18,7 +18,7 @@ st.set_page_config(layout="wide")
 st.header("Where to eat in Bengalure? Let us guide you!")
 
 #Graphics
-st.image(str(cwd+"/2_Analysis_of_restaurants_in_Bengalore_app_Python_project/app/food.png"))
+st.image(str(cwd+"/2_Analysis_of_restaurants_in_Bengalore_app_Python_project/app/food.png"), use_column_width='always')
 
 st.header("Find the best restaurants near you that suit your preferences")
 
@@ -37,11 +37,14 @@ with st.sidebar:
     # st.write('Values:', rate)
     
     # New restaurants
-    new_restaurants = st.checkbox('Include new restaurants: ')
+    new_restaurants = st.checkbox('Include new restaurants')
+    
+    # Ok button
+    ok_button = st.button("Find best restaurants")
 
 # If button is pressed
 preferences ={}
-if st.button("Find best restaurants"):
+if ok_button:
 
     # Collecting preferences for data processing
     preferences["cuisine"] = cuisines
