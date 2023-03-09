@@ -18,13 +18,12 @@ st.set_page_config(layout="wide")
 st.header("Where to eat in Bengalure? Let us guide you!")
 
 #Graphics
-st.image(str(cwd+"/2_Analysis_of_restaurants_in_Bengalore_app_Python_project/app/food.png")
+st.image(str(cwd+"/2_Analysis_of_restaurants_in_Bengalore_app_Python_project/app/food.png"))
 
 st.header("Find the best restaurants near you that suit your preferences")
 
 # put all widgets in sidebar and have a subtitle
 with st.sidebar:
-    
     st.subheader("Select your preferences")
 
     # Cuisine type
