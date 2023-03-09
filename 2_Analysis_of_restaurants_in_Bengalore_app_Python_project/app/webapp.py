@@ -11,24 +11,38 @@ cwd = os.getcwd()
 df = pd.read_csv(str(cwd+"/2_Analysis_of_restaurants_in_Bengalore_app_Python_project/app/cleaned_zomato.csv"))
 df["cuisines"] = df["cuisines"].apply(eval)
 
+# set up the app with wide view preset and a title
+st.set_page_config(layout="wide")
+
 # Title
-st.header("Where to eat in Bengalure? Let us help you!")
+st.header("Where to eat in Bengalure? Let us guide you!")
 
-# Cuisine type
-cuisines = st.multiselect("Select cuisine type:", tuple(cuisines_list(df).keys()))
+#Graphics
+st.image("food.png")
 
-# Price range
-price_min, price_max = st.select_slider('Select price range: ', options=['$','$$','$$$','$$$$'], value=('$', '$$$$'))
+st.header("Find the best restaurants near you that suit your preferences")
 
-# Rate range
-rate = st.slider('Select rate range: ', 1.8, 5.0, (3.0, 4.0))
-st.write('Values:', rate)
+# put all widgets in sidebar and have a subtitle
+with st.sidebar:
+	st.subheader("Select your preferences")
 
-new_restaurants = st.checkbox('Include new restaurants: ')
+
+    # Cuisine type
+    cuisines = st.multiselect("Cuisine type:", tuple(cuisines_list(df).keys()))
+
+    # Price range
+    price_min, price_max = st.select_slider('Price range: ', options=['$','$$','$$$','$$$$'], value=('$', '$$$$'))
+
+    # Rate range
+    rate = st.slider('Rate range: ', 1.8, 5.0, (3.0, 4.0))
+    # st.write('Values:', rate)
+    
+    # New restaurants
+    new_restaurants = st.checkbox('Include new restaurants: ')
 
 # If button is pressed
 preferences ={}
-if st.button("OK"):
+if st.button("Find best restaurants"):
 
     # Collecting preferences for data processing
     preferences["cuisine"] = cuisines
