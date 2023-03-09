@@ -24,8 +24,8 @@ st.header("Find the best restaurants near you that suit your preferences")
 
 # put all widgets in sidebar and have a subtitle
 with st.sidebar:
-	st.subheader("Select your preferences")
-
+    
+    st.subheader("Select your preferences")
 
     # Cuisine type
     cuisines = st.multiselect("Cuisine type:", tuple(cuisines_list(df).keys()))
