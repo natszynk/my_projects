@@ -38,7 +38,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg(os.joinpath(cwd,repo_path,"app_2.png"))
+set_png_as_page_bg(os.path.join(cwd,repo_path,"app_2.png"))
 
 
 
@@ -66,7 +66,7 @@ labels = {'Apple A': 0,
         
 
 
-background_path = os.joinpath(cwd,repo_path,"background_rgb.png")
+background_path = os.path.join(cwd,repo_path,"background_rgb.png")
 
 
 def plot_value_img(prediction):
@@ -126,7 +126,7 @@ if upload is not None:
     image /= 255 
     x = np.expand_dims(image, axis=0)
 
-    model = tf.keras.models.load_model(os.joinpath(cwd,repo_path,"my_h5_model_4.h5"))
+    model = tf.keras.models.load_model(os.path.join(cwd,repo_path,"my_h5_model_4.h5"))
     prediction = model.predict(x)	# wektor prawdopodobieństw
     pred_class = np.argmax(prediction, axis=1)[0] # klasa (0-5)
     
