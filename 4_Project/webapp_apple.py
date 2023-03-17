@@ -46,9 +46,6 @@ set_png_as_page_bg(os.path.join(cwd,repo_path,"app_2.png"))
 st.markdown('<h1 style="color:darkred;">Apple classification model</h1>', unsafe_allow_html=True)
 st.markdown('<h2 style="color:darkred;">Classify the apple into one of the following six categories</h2>', unsafe_allow_html=True)
 st.markdown('<h3 style="color:gray;"> A,B, C, D, E, F</h3>', unsafe_allow_html=True)
-st.write(os.getcwd())
-st.write(os.getcwd())
-
 
 upload= st.file_uploader('Insert image for classification', type=['png','jpg','jpeg'])
 
