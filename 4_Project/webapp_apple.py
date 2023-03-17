@@ -70,7 +70,7 @@ labels = {'Apple A': 0,
 
 
 background_path = os.path.join(cwd,repo_path,"background_rgb.png")
-st.image(str(cwd+"/Project_4/background_rgb.png"))
+st.image(str(cwd+"/4_Project/background_rgb.png"))
 
 def plot_value_img(prediction):
     predicted_label = np.argmax(prediction)
