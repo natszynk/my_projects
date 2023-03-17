@@ -70,7 +70,7 @@ labels = {'Apple A': 0,
 
 
 # background_path = os.path.join(cwd,repo_path,"background_rgb.png")
-background_path = ("https://github.com/natszynk/my_projects/blob/main/4_Project/background_rgb.png")
+background_path = "https://github.com/natszynk/my_projects/blob/main/4_Project/background_rgb.png"
 
 
 def plot_value_img(prediction):
@@ -104,7 +104,7 @@ if upload is not None:
         im = remove(im)
         im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
         
-        background = Image.open(background_path)
+        background = Image.open(urlopen(background_path))
         background = np.asarray(background)
         # background=cv2.resize(background,(IMG_WIDTH, IMG_HEIGHT), interpolation = cv2.INTER_AREA)
         # background = cv2.cvtColor(background , cv2.COLOR_BGR2RGB)
