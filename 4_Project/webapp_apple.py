@@ -69,7 +69,7 @@ labels = {'Apple A': 0,
         
 
 
-background_path = st.image(os.path.join(cwd,repo_path,"background_rgb.png"))
+background_path = os.path.join(cwd,repo_path,"background_rgb.png")
 
 
 def plot_value_img(prediction):
@@ -103,10 +103,10 @@ if upload is not None:
         im = remove(im)
         im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
         
-
-        background = cv2.imread(background_path)
+        background = Image.open(background_path)
+        background = np.asarray(background)
         # background=cv2.resize(background,(IMG_WIDTH, IMG_HEIGHT), interpolation = cv2.INTER_AREA)
-        background = cv2.cvtColor(background , cv2.COLOR_BGR2RGB)
+        # background = cv2.cvtColor(background , cv2.COLOR_BGR2RGB)
 
         # extract alpha channel from foreground image as mask and make 3 channels
         alpha = im[:,:,2]
