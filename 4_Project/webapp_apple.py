@@ -10,7 +10,7 @@ import random
 from PIL import Image
 
 cwd = os.getcwd()
-repo_path = "/Project_4/"
+repo_path = "Project_4"
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -38,7 +38,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg(cwd+repo_path+'app_2.png')
+set_png_as_page_bg(os.joinpath(cwd,repo_path,"app_2.png"))
 
 
 
@@ -66,7 +66,7 @@ labels = {'Apple A': 0,
         
 
 
-background_path = str(cwd+repo_path+"background_rgb.png")
+background_path = os.joinpath(cwd,repo_path,"background_rgb.png")
 
 
 def plot_value_img(prediction):
@@ -126,7 +126,7 @@ if upload is not None:
     image /= 255 
     x = np.expand_dims(image, axis=0)
 
-    model = tf.keras.models.load_model(cwd+repo_path+'my_h5_model_4.h5')
+    model = tf.keras.models.load_model(os.joinpath(cwd,repo_path,"my_h5_model_4.h5"))
     prediction = model.predict(x)	# wektor prawdopodobieństw
     pred_class = np.argmax(prediction, axis=1)[0] # klasa (0-5)
     
@@ -146,7 +146,7 @@ if upload is not None:
     st.markdown('<h3 style="color:lightred;">See examples of apples in the predicted class:</h3>', unsafe_allow_html=True)
     class_index = labels[pred_label]
     view_class = st.selectbox("Select class:", list(labels.keys()),index=class_index)
-    images_folder = os.path.join(cwd,repo_path'Apple', view_class)
+    images_folder = os.path.join(cwd,repo_path,'Apple', view_class)
     cols = st.columns(3)
 
     for i in range(3):
