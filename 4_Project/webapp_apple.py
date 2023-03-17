@@ -146,7 +146,7 @@ if upload is not None:
     st.markdown('<h3 style="color:lightred;">See examples of apples in the predicted class:</h3>', unsafe_allow_html=True)
     class_index = labels[pred_label]
     view_class = st.selectbox("Select class:", list(labels.keys()),index=class_index)
-    images_folder = os.path.join('Apple', view_class)
+    images_folder = os.path.join(cwd,repo_path'Apple', view_class)
     cols = st.columns(3)
 
     for i in range(3):
