@@ -12,7 +12,7 @@ from PIL import Image
 cwd = os.getcwd()
 repo_path = "Project_4"
 
-st.set_option('enableStaticServing', True)
+#st.set_option('enableStaticServing', True)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # # Background
