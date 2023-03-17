@@ -69,8 +69,7 @@ labels = {'Apple A': 0,
         
 
 
-# background_path = os.path.join(cwd,repo_path,"background_rgb.png")
-background_path = (".app/Project_4/static/background_rgb.png")
+background_path = st.image(os.path.join(cwd,repo_path,"background_rgb.png"))
 
 
 def plot_value_img(prediction):
