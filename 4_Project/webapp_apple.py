@@ -12,6 +12,7 @@ from PIL import Image
 cwd = os.getcwd()
 repo_path = "Project_4"
 
+st.set_option('enableStaticServing', True)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # # Background
@@ -69,7 +70,7 @@ labels = {'Apple A': 0,
 
 
 # background_path = os.path.join(cwd,repo_path,"background_rgb.png")
-background_path = ("/natszynk/my_projects/Project_4/background_rgb.png")
+background_path = (".app/Project_4/static/background_rgb.png")
 
 
 def plot_value_img(prediction):
