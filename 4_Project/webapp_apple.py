@@ -70,7 +70,7 @@ labels = {'Apple A': 0,
 
 
 # background_path = os.path.join(cwd,repo_path,"background_rgb.png")
-st.image("https://www.pexels.com/photo/landscape-nature-sky-man-6620743/")
+st.image(str(cwd+"/Project_4/background_rgb.png"))
 
 def plot_value_img(prediction):
     predicted_label = np.argmax(prediction)
@@ -103,8 +103,7 @@ if upload is not None:
         im = remove(im)
         im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
         
-        st.image("https://www.pexels.com/photo/landscape-nature-sky-man-6620743/")
-        background = Image.open(background)
+        background = Image.open(str(cwd+"/Project_4/background_rgb.png"))
         background = np.asarray(background)
         # background=cv2.resize(background,(IMG_WIDTH, IMG_HEIGHT), interpolation = cv2.INTER_AREA)
         # background = cv2.cvtColor(background , cv2.COLOR_BGR2RGB)
