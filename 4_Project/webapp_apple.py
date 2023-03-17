@@ -37,7 +37,8 @@ def set_png_as_page_bg(png_file):
     
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
-
+    
+print = os.path.join(cwd,repo_path,"app_2.png")
 set_png_as_page_bg(os.path.join(cwd,repo_path,"app_2.png"))
 
 
