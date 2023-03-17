@@ -6,7 +6,6 @@ tensorflow==2.11.0
 tensorflow-estimator==2.11.0
 tensorflow-io-gcs-filesystem==0.30.0
 h5py==3.8.0
-opencv-contrib-python==4.7.0.68
 opencv-python-headless==4.6.0.66
 Pillow==9.3.0
 streamlit==1.17.0
