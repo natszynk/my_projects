@@ -145,7 +145,7 @@ if selected == "Model":
         if upload_file is not None:
 
             # model=tf.keras.models.load_model("my_h5_model_4.h5", compile=False)
-            model=tf.keras.models.load_model(os.path.join(cwd,repo_path,"my_h5_model_4_edit.h5"))
+            model=tf.keras.models.load_model(os.path.join(cwd,repo_path,"my_h5_model_6.h5"))
             # model.compile(optimizer=tf.keras.optimizers.Adam(), loss=tf.keras.losses.CategoricalCrossentropy(), metrics=["accuracy"])
             
             y_pred = model.predict(processed_image_for_classification(img)).argmax(axis=1)
