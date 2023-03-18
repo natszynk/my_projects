@@ -100,23 +100,23 @@ if upload is not None:
         
         background = cv2.imread(background_path)
 
-	overlay = im
-	height, width = overlay.shape[:2]
-	
-	for y in range(height):
-    		for x in range(width):
-        		overlay_color = overlay[y, x, :3]  # first three elements are color (RGB)
-        		overlay_alpha = overlay[y, x, 3] / 255  # 4th element is the alpha channel, convert from 0-255 to 0.0-1.0
-
-        		# get the color from the background image
-        		background_color = background[y, x]
+        overlay = im
+        height, width = overlay.shape[:2]
+        
+        for y in range(height):
+            for x in range(width):
+                overlay_color = overlay[y, x, :3]  # first three elements are color (RGB)
+                overlay_alpha = overlay[y, x, 3] / 255  # 4th element is the alpha channel, convert from 0-255 to 0.0-1.0
+                
+                # get the color from the background image
+                background_color = background[y, x]
 
         		# combine the background color and the overlay color weighted by alpha
-        		composite_color = background_color * (1 - overlay_alpha) + overlay_color * overlay_alpha
+                composite_color = background_color * (1 - overlay_alpha) + overlay_color * overlay_alpha
 			
-			result = background
+                result = background
         		# update the background image in place
-        		result[y, x] = composite_color
+                result[y, x] = composite_color
 
     c1.header('Input Image')
     c1.image(im_to_display)
