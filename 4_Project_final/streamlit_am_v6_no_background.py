@@ -83,7 +83,7 @@ if selected == "Model":
 
     with subtitle:
         
-        st.markdown("<h2 style='text-align: center;'>This is how &#127822 &#127823 categories looks like:</h1>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center;'>This is how &#127822 &#127823 categories look like:</h1>", unsafe_allow_html=True)
         
         
     with pictures_line_1:
@@ -128,7 +128,7 @@ if selected == "Model":
             # file_bytes=np.asarray(bytearray(upload_file.read()), dtype=np.uint8)
             # img=cv2.imdecode(file_bytes, 1)
 
-            st.markdown('<h4 style="text-align: center;"> Input Image</h4>', unsafe_allow_html=True)
+            st.markdown('<h4 style="text-align: center;"> Input image</h4>', unsafe_allow_html=True)
             col7, col8, col9 = st.columns(3)
             with col7:
                 st.write(' ')
