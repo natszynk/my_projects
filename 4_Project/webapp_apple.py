@@ -96,22 +96,27 @@ if upload is not None:
         im=cv2.resize(img,(IMG_WIDTH, IMG_HEIGHT), interpolation = cv2.INTER_AREA)
         im_to_display = im
         im = remove(im)
-        im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
+
         
-        background = Image.open(background_path)
-        background = np.asarray(background)
-        background=cv2.resize(background,(IMG_WIDTH, IMG_HEIGHT), interpolation = cv2.INTER_AREA)
-        background = cv2.cvtColor(background , cv2.COLOR_BGR2RGB)
+        background = cv2.imread(background_path)
 
-        # extract alpha channel from foreground image as mask and make 3 channels
-        alpha = im[:,:,2]
-        alpha = cv2.merge([alpha,alpha,alpha])
+	overlay = im
+	height, width = overlay.shape[:2]
+	
+	for y in range(height):
+    		for x in range(width):
+        		overlay_color = overlay[y, x, :3]  # first three elements are color (RGB)
+        		overlay_alpha = overlay[y, x, 3] / 255  # 4th element is the alpha channel, convert from 0-255 to 0.0-1.0
 
-        # extract bgr channels from foreground image
-        front = im[:,:,0:2]
+        		# get the color from the background image
+        		background_color = background[y, x]
 
-        # blend the two images using the alpha channel as controlling mask
-        result = np.where(alpha==(0,0,0), background, im)
+        		# combine the background color and the overlay color weighted by alpha
+        		composite_color = background_color * (1 - overlay_alpha) + overlay_color * overlay_alpha
+			
+			result = background
+        		# update the background image in place
+        		result[y, x] = composite_color
 
     c1.header('Input Image')
     c1.image(im_to_display)
