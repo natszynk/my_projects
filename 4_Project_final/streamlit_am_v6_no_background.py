@@ -53,7 +53,7 @@ def processed_image_for_classification(img):
     img=np.expand_dims(img, axis=0)
     return img
 
-image_path = os.path.join(cwd,repo_path,"pic_examples")
+image_path = os.path.join(cwd,repo_path,"pic_examples/")
 
 
 with st.sidebar:
