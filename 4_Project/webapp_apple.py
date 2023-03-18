@@ -129,7 +129,7 @@ if upload is not None:
     image /= 255 
     x = np.expand_dims(image, axis=0)
 
-    model = tf.keras.models.load_model(os.path.join(cwd,repo_path,"my_h5_model_4_edit.h5"))
+    model = tf.keras.models.load_model(os.path.join(cwd,repo_path,"my_h5_model_4.h5"))
     prediction = model.predict(x)	# wektor prawdopodobieństw
     pred_class = np.argmax(prediction, axis=1)[0] # klasa (0-5)
     
