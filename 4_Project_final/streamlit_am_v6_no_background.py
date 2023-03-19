@@ -38,15 +38,22 @@ def show_droped_image(img):
 
 def processed_image_for_classification(img):
 
-    img=cv2.resize(src=img, dsize=(320, 258), interpolation=cv2.INTER_AREA)
-    img=remove(img)
-    img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+    if "test" in str(upload_file.name):
+
+        img=cv2.resize(src=img, dsize=(320, 258), interpolation=cv2.INTER_AREA)
+        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+
+    else:
+
+        img=cv2.resize(src=img, dsize=(320, 258), interpolation=cv2.INTER_AREA)
+        img=remove(img)
+        img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     
-    background = cv2.imread(os.path.join(cwd,repo_path,"pic_background/background_rgb.png"))
-    background = cv2.cvtColor(background, cv2.COLOR_BGR2RGB)
-    alpha=img[:,:,2]
-    alpha=cv2.merge([alpha, alpha, alpha])
-    img=np.where(alpha==(0, 0, 0), background, img)
+        background = cv2.imread(os.path.join(cwd,repo_path,"pic_background/background_rgb.png"))
+        background = cv2.cvtColor(background, cv2.COLOR_BGR2RGB)
+        alpha=img[:,:,2]
+        alpha=cv2.merge([alpha, alpha, alpha])
+        img=np.where(alpha==(0, 0, 0), background, img)
     
     img=img.astype('float32')
     img=img / 255 
