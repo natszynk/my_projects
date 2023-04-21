@@ -22,19 +22,8 @@ def show_example_image(image_path:str, image_cat:str):
     return img   
 
 def show_droped_image(img):
-    # img=cv2.cvtColor(img, cv2.COLOR_BGR2RGB) - przy improcie z PIL nie zmieniają się kolory, można pominąć
     img=cv2.copyMakeBorder(src=img, top=5, bottom=5, left=5, right=5, borderType=cv2.BORDER_CONSTANT, value=[256, 256, 256])
     return img
-
-# To chyba do usunięcia, bo się duplikuje
-
-# def processed_image_for_classification(img):
-#     img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-#     img=cv2.resize(src=img, dsize=(320, 258), interpolation=cv2.INTER_AREA)
-#     img=img.astype('float32')
-#     img=img / 255 
-#     img=np.expand_dims(img, axis=0)
-#     return img
 
 def processed_image_for_classification(img):
 
@@ -130,10 +119,6 @@ if selected == "Model":
             
             img= Image.open(upload_file)
             img= np.asarray(img)
-
-            # Convert the file to an opencv image
-            # file_bytes=np.asarray(bytearray(upload_file.read()), dtype=np.uint8)
-            # img=cv2.imdecode(file_bytes, 1)
 
             st.markdown('<h4 style="text-align: center;"> Input image</h4>', unsafe_allow_html=True)
             col7, col8, col9 = st.columns(3)
